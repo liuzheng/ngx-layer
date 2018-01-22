@@ -1,0 +1,36 @@
+{
+  "name": "ngx-layer",
+  "version": "0.0.1",
+  "description": "ngx-layer",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "build:watch": "gulp",
+    "docs": "npm run docs:build",
+    "docs:build": "compodoc -p tsconfig.json -n ngx-logger -d docs --hideGenerator",
+    "docs:serve": "npm run docs:build -- -s",
+    "docs:watch": "npm run docs:build -- -s -w",
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "test": "tsc && karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuzheng/ngx-layer.git"
+  },
+  "keywords": [
+    "angular",
+    "layer"
+  ],
+  "author": {
+    "name": "Zheng Liu",
+    "email": "liuzheng712@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuzheng/ngx-layer/issues"
+  },
+  "homepage": "https://github.com/liuzheng/ngx-layer#readme",
+  "engines": {
+    "node": ">=9.0.0"
+  }
+}
