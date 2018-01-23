@@ -4,7 +4,8 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
-import {LayerModule} from './module/layer/layer.module';
+import {NgxLayerModule} from '../../index';
+// import {LayerModule as NgxLayerModule} from './module/layer/layer.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import {LayerModule} from './module/layer/layer.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    LayerModule
+    NgxLayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
